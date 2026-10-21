@@ -34,8 +34,8 @@
     },
     {
       "path": "docs/MACHINE-SNAPSHOT.md",
-      "bytes": 3415,
-      "sha256": "b66d5d1f22824ddac122b1310054ee9271b44561edb1e9dd68004020ff3509cb",
+      "bytes": 4077,
+      "sha256": "779b25cad23ca4432307a6e6669fecc599eac0661d7ddbecab09fa25ed568226",
       "source": "authored transfer artifact",
       "version": "1.0.0"
     },
@@ -160,8 +160,8 @@
     },
     {
       "path": "profile/AGENTS.md",
-      "bytes": 7228,
-      "sha256": "8744edb99895145d4edbf704262b8a12a6f442d0a9d9364b6f9aab1311280aae",
+      "bytes": 10273,
+      "sha256": "a562349a28e588388d4399413c962e2306d1e2f2fce09829764314d4353bc0b4",
       "source": "authored transfer artifact",
       "version": "1.0.0"
     },
@@ -188,8 +188,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8848,
-      "sha256": "f87075b34c833ee0d22a9395370038ce942b1a7e19494bca50be1e2747d0d5f3",
+      "bytes": 11278,
+      "sha256": "9642bf7c85cf3a614c9c9b0e92b708c328717d322f61332fba5fd9b5787c5ba7",
       "source": "authored transfer artifact",
       "version": "1.0.0"
     },
