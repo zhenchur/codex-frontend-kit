@@ -12,7 +12,7 @@ function walk(dir) {
   });
 }
 const files = walk(root).map(full => ({ full, relative: path.relative(root, full).split(path.sep).join('/') }))
-  .filter(f => !['manifest.json', '.gitignore', '.gitattributes'].includes(f.relative) && !/\.(zip|tgz)$/.test(f.relative))
+  .filter(f => !['manifest.json', '.gitignore', '.npmignore', '.gitattributes'].includes(f.relative) && !/\.(zip|tgz)$/.test(f.relative))
   .sort((a,b) => a.relative.localeCompare(b.relative)).map(({ full, relative }) => {
     const bytes = fs.readFileSync(full);
     const snapshot = relative.match(/^(?:optional-)?skills\/(?!frontend-react-workflow\/)(.+)$/);

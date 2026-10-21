@@ -13,7 +13,9 @@ function listFiles(dir) {
     return entry.isDirectory() ? listFiles(full) : [path.relative(root, full).split(path.sep).join('/')];
   });
 }
-const actualFiles = listFiles(root).filter(name => !['manifest.json', '.gitignore', '.gitattributes'].includes(name) && !/\.(zip|tgz)$/.test(name)).sort();
+// npm may rename the archive's root .gitignore to .npmignore during extraction.
+// Neither file is executed or installed into the Codex profile.
+const actualFiles = listFiles(root).filter(name => !['manifest.json', '.gitignore', '.npmignore', '.gitattributes'].includes(name) && !/\.(zip|tgz)$/.test(name)).sort();
 assert.deepEqual(actualFiles, manifest.files.map(f => f.path).sort(), 'Unlisted or missing package files; regenerate and review the manifest');
 let links = 0;
 const issues = [];

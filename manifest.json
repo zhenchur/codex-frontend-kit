@@ -180,8 +180,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6663,
-      "sha256": "c6de40d7d9917425a4b346f8d29a40bd5d0f4c962edb5b9be99dfcccf69bc30d",
+      "bytes": 6810,
+      "sha256": "015183b679004c5a99345e1262df53835b691d6ac6c5b6ceb3bf0dfa1b702c30",
       "source": "authored frontend workflow",
       "version": "2.0.0"
     },
@@ -194,8 +194,8 @@
     },
     {
       "path": "scripts/make-manifest.mjs",
-      "bytes": 1548,
-      "sha256": "42268972af37df6ac2be44255c74e10b0fc0c325d15d404393ee9f0779f0e674",
+      "bytes": 1562,
+      "sha256": "2645c1e1ad8d7c110c5e78df472fde620ad00415c0ee0fa6db6dfa62edfec78e",
       "source": "authored frontend workflow",
       "version": "2.0.0"
     },
@@ -215,15 +215,15 @@
     },
     {
       "path": "scripts/test-setup.mjs",
-      "bytes": 3821,
-      "sha256": "de14738fc80c82077f418b7b8405a19482a49a13bc63c372dba1ae0c609c3ec5",
+      "bytes": 4090,
+      "sha256": "6dfe84fc92bcf970524f9c5532b018a22f6138e416106538fde7ab7da45a6300",
       "source": "authored frontend workflow",
       "version": "2.0.0"
     },
     {
       "path": "scripts/verify.mjs",
-      "bytes": 3146,
-      "sha256": "4cc4fbbee888bc61c3a0aeac91da2ac99c7a3f424ddc9346b41a7aa8d3a78afc",
+      "bytes": 3306,
+      "sha256": "035cd40aafa1a05adfed32d9c4ed8ad8f151d455b5205e1a9795f9eb72f5432e",
       "source": "authored frontend workflow",
       "version": "2.0.0"
     },

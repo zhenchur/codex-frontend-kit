@@ -11,16 +11,16 @@
 **Windows, PowerShell:**
 
 ```powershell
-npx.cmd --yes --package=https://github.com/zhenchur/codex-frontend-kit/archive/refs/heads/main.tar.gz codex-frontend-kit
+npx.cmd --yes --package=https://github.com/zhenchur/codex-frontend-kit/archive/refs/tags/v2.0.0.tar.gz codex-frontend-kit
 ```
 
 **macOS / Linux:**
 
 ```sh
-npx --yes --package=https://github.com/zhenchur/codex-frontend-kit/archive/refs/heads/main.tar.gz codex-frontend-kit
+npx --yes --package=https://github.com/zhenchur/codex-frontend-kit/archive/refs/tags/v2.0.0.tar.gz codex-frontend-kit
 ```
 
-Команда скачивает комплект, проверяет хеши и устанавливает все включённые навыки и правила. После установки начните новый чат Codex. Если новые навыки не появились, перезапустите приложение. Для обновления выполните ту же команду снова.
+Команда скачивает проверенную версию v2.0.0, проверяет хеши и устанавливает все включённые навыки и правила. После установки начните новый чат Codex. Если навыки не появились, перезапустите приложение. Повторный запуск восстанавливает эту же версию; для обновления возьмите команду с новой версией из актуального README.
 
 Figma и GitHub подключаются к вашему аккаунту один раз через официальный каталог плагинов. Их OAuth-вход нельзя перенести вместе с файлами. [Установка и подключения](docs/SETUP.md).
 

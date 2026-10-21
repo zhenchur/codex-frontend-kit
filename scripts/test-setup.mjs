@@ -51,6 +51,9 @@ assert.equal(fs.readFileSync(path.join(codex, 'config.toml'), 'utf8'), baseConfi
 
 const damaged = path.join(scratch, 'damaged-package');
 fs.cpSync(root, damaged, { recursive: true, filter: source => !['.git', 'node_modules', '.test-output'].includes(path.basename(source)) });
+fs.writeFileSync(path.join(damaged, '.npmignore'), 'node_modules/\n');
+result = run(damaged, path.join(scratch, 'archive-dry-run'), '--dry-run');
+assert.equal(result.status, 0, 'npm-generated packaging metadata must not invalidate an otherwise intact GitHub archive');
 fs.appendFileSync(path.join(damaged, 'profile/AGENTS.md'), '\nChanged after manifest generation\n');
 const untouched = path.join(scratch, 'must-not-exist');
 result = run(damaged, untouched);
