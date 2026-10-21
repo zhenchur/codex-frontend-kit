@@ -160,8 +160,8 @@
     },
     {
       "path": "profile/AGENTS.md",
-      "bytes": 10273,
-      "sha256": "a562349a28e588388d4399413c962e2306d1e2f2fce09829764314d4353bc0b4",
+      "bytes": 11287,
+      "sha256": "4b8c9de3c1f788d6e31e6e3b9ee5f0106ff6fb48dfbb84fa82c24c542b2673e8",
       "source": "authored transfer artifact",
       "version": "1.0.0"
     },
@@ -188,8 +188,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11278,
-      "sha256": "9642bf7c85cf3a614c9c9b0e92b708c328717d322f61332fba5fd9b5787c5ba7",
+      "bytes": 12115,
+      "sha256": "bb4cbba7cacbc30b21fd67aa02d8dc8260ae2abcb0bf9217569cc84ba22b5942",
       "source": "authored transfer artifact",
       "version": "1.0.0"
     },
