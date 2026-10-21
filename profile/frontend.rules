@@ -1,3 +1,3 @@
-# Optional. This one portable allow rule existed on the source machine.
-# Install only with --include-command-rules after reviewing its scope.
+# Portable development rule, included by the full setup command.
+# The selective installer requires --include-command-rules.
 prefix_rule(pattern=["npm", "run", "dev"], decision="allow")

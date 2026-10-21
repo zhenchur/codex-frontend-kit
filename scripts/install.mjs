@@ -85,7 +85,11 @@ function addSkills(folder) {
 addSkills('skills');
 if (flags.has('--include-optional')) addSkills('optional-skills');
 const agentsSource = path.join(kitRoot, 'profile', 'AGENTS.md');
-const agentsTarget = path.join(codexHome, 'AGENTS.md');
+// Codex reads a nonempty global override before AGENTS.md. Merge into the
+// effective file so an existing override cannot silently hide the new rules.
+const agentsOverride = path.join(codexHome, 'AGENTS.override.md');
+const agentsTarget = flags.has('--merge-agents') && fs.existsSync(agentsOverride) && fs.readFileSync(agentsOverride, 'utf8').trim()
+  ? agentsOverride : path.join(codexHome, 'AGENTS.md');
 if (flags.has('--merge-agents')) {
   const original = fs.existsSync(agentsTarget) ? fs.readFileSync(agentsTarget, 'utf8') : '';
   const block = `${startMarker}\n${fs.readFileSync(agentsSource, 'utf8').trim()}\n${endMarker}`;
@@ -115,4 +119,4 @@ if (apply) {
 }
 const counts = Object.fromEntries(['create', 'replace+backup', 'unchanged', 'skip-conflict'].map(key => [key, plan.filter(p => p.action === key).length]));
 console.log(JSON.stringify({ applied: apply, counts, backupRoot: apply && counts['replace+backup'] ? backupRoot : null, baseConfigModified: false }));
-if (fs.existsSync(path.join(codexHome, 'AGENTS.override.md'))) console.log('Note: AGENTS.override.md exists and may take precedence over AGENTS.md.');
+if (fs.existsSync(agentsOverride)) console.log(`Global instruction target: ${agentsTarget}`);

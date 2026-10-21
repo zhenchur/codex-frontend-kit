@@ -1,13 +1,16 @@
 {
   "name": "codex-frontend-kit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
+  "description": "Portable React, TypeScript, BEM, GSAP and Lenis workflow for Codex",
+  "bin": { "codex-frontend-kit": "scripts/setup.mjs" },
+  "files": ["scripts", "skills", "optional-skills", "profile", "templates", "docs", "plugins.json", "manifest.json", "THIRD-PARTY-NOTICES.md", "README.md", ".nvmrc"],
   "engines": { "node": ">=22.12.0" },
   "scripts": {
     "verify": "node scripts/verify.mjs",
-    "test": "node scripts/test-installer.mjs",
+    "test": "node scripts/test-installer.mjs && node scripts/test-setup.mjs",
     "plan": "node scripts/install.mjs",
-    "install:kit": "node scripts/install.mjs --apply"
+    "install:kit": "node scripts/setup.mjs"
   }
 }

@@ -17,7 +17,8 @@ assert.ok(!fs.existsSync(testHome), 'dry-run writes nothing');
 run('--apply');
 const codex = path.join(testHome, '.codex');
 const skills = path.join(testHome, '.agents', 'skills');
-assert.equal(fs.readdirSync(skills).length, 8);
+assert.equal(fs.readdirSync(skills).length, 9);
+assert.ok(fs.existsSync(path.join(skills, 'frontend-react-workflow', 'SKILL.md')));
 assert.ok(!fs.existsSync(path.join(codex, 'config.toml')), 'base config never created');
 assert.ok(fs.existsSync(path.join(codex, 'frontend.config.toml')));
 assert.ok(run('--apply').includes('"create":0'), 'repeat install is idempotent');
@@ -29,7 +30,7 @@ run('--apply', '--merge-agents', '--include-optional', '--include-command-rules'
 const merged = fs.readFileSync(path.join(codex, 'AGENTS.md'), 'utf8');
 assert.ok(merged.startsWith('Keep my existing rules.'));
 assert.equal((merged.match(/codex-frontend-kit:start/g) || []).length, 1);
-assert.equal(fs.readdirSync(skills).length, 10);
+assert.equal(fs.readdirSync(skills).length, 11);
 assert.ok(fs.existsSync(path.join(codex, 'rules', 'frontend-kit.rules')));
 run('--apply', '--merge-agents');
 assert.equal(fs.readFileSync(path.join(codex, 'AGENTS.md'), 'utf8'), merged, 'merge is idempotent');

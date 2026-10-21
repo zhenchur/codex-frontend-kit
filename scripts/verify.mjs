@@ -13,7 +13,7 @@ function listFiles(dir) {
     return entry.isDirectory() ? listFiles(full) : [path.relative(root, full).split(path.sep).join('/')];
   });
 }
-const actualFiles = listFiles(root).filter(name => name !== 'manifest.json' && !name.endsWith('.zip')).sort();
+const actualFiles = listFiles(root).filter(name => !['manifest.json', '.gitignore', '.gitattributes'].includes(name) && !/\.(zip|tgz)$/.test(name)).sort();
 assert.deepEqual(actualFiles, manifest.files.map(f => f.path).sort(), 'Unlisted or missing package files; regenerate and review the manifest');
 let links = 0;
 const issues = [];

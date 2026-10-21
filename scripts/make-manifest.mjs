@@ -12,13 +12,13 @@ function walk(dir) {
   });
 }
 const files = walk(root).map(full => ({ full, relative: path.relative(root, full).split(path.sep).join('/') }))
-  .filter(f => !['manifest.json'].includes(f.relative) && !f.relative.endsWith('.zip'))
+  .filter(f => !['manifest.json', '.gitignore', '.gitattributes'].includes(f.relative) && !/\.(zip|tgz)$/.test(f.relative))
   .sort((a,b) => a.relative.localeCompare(b.relative)).map(({ full, relative }) => {
     const bytes = fs.readFileSync(full);
-    const snapshot = relative.match(/^(?:optional-)?skills\/(.+)$/);
+    const snapshot = relative.match(/^(?:optional-)?skills\/(?!frontend-react-workflow\/)(.+)$/);
     return { path: relative, bytes: bytes.length, sha256: crypto.createHash('sha256').update(bytes).digest('hex'),
-      source: snapshot ? '$CODEX_HOME/skills/' + snapshot[1] : relative === 'profile/AGENTS.original.md' ? '$CODEX_HOME/AGENTS.md (empty original)' : 'authored transfer artifact',
-      version: snapshot ? 'not declared in source; identified by SHA-256' : '1.0.0' };
+      source: snapshot ? 'bundled skill; provenance in THIRD-PARTY-NOTICES.md: ' + snapshot[1] : 'authored frontend workflow',
+      version: snapshot ? 'snapshot identified by SHA-256' : '2.0.0' };
   });
-fs.writeFileSync(path.join(root, 'manifest.json'), JSON.stringify({ schemaVersion: 1, createdDate: '2026-10-21', kitVersion: '1.0.0', sourceOS: 'Windows', files }, null, 2) + '\n');
+fs.writeFileSync(path.join(root, 'manifest.json'), JSON.stringify({ schemaVersion: 1, createdDate: '2026-10-21', kitVersion: '2.0.0', files }, null, 2) + '\n');
 console.log(`Manifest: ${files.length} files`);
