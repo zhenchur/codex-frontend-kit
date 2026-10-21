@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "createdDate": "2026-10-21",
+  "kitVersion": "1.0.0",
+  "sourceOS": "Windows",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 40,
+      "sha256": "1ba32de4f2ada42c3750ceb491d39c4c4616678694c1315555dc0aa3b0673c2a",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": ".nvmrc",
+      "bytes": 3,
+      "sha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "docs/EXCLUDED.md",
+      "bytes": 1809,
+      "sha256": "5174ad09c22dec08b6167b2cd26621ba01b9472f2b4dbab7260eb5f276a89534",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "docs/MACHINE-SNAPSHOT.md",
+      "bytes": 3415,
+      "sha256": "b66d5d1f22824ddac122b1310054ee9271b44561edb1e9dd68004020ff3509cb",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "bytes": 1514,
+      "sha256": "c5d765acf670002f3437c2f7263ca9851cf85f582c7f584133a347d0bb58aeb6",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "optional-skills/copy-editing/evals/evals.json",
+      "bytes": 7547,
+      "sha256": "49881baea09fd93a03da69ab249a7d37a93b1fa015debce320b5861c606593ef",
+      "source": "$CODEX_HOME/skills/copy-editing/evals/evals.json",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/copy-editing/references/checklist.md",
+      "bytes": 1728,
+      "sha256": "db143b969b45b0933fe6eb772992890d1472d036a6c887fc98665e4fb48da43c",
+      "source": "$CODEX_HOME/skills/copy-editing/references/checklist.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/copy-editing/references/content-refresh.md",
+      "bytes": 2298,
+      "sha256": "8a3a2d301bb2b8b2a780f5bef43093ab42295041b2fea2a9caeca2421ef3c79b",
+      "source": "$CODEX_HOME/skills/copy-editing/references/content-refresh.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/copy-editing/references/plain-english-alternatives.md",
+      "bytes": 8258,
+      "sha256": "df4f820d4c63ae8a517c64a243c101658352cd07d002355bf3c97de0a00f3775",
+      "source": "$CODEX_HOME/skills/copy-editing/references/plain-english-alternatives.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/copy-editing/SKILL.md",
+      "bytes": 15000,
+      "sha256": "9b5a20be3dc5513c8f0b4f4c4960857e4d28ed83698a5b33c8dde9dc75a47bf6",
+      "source": "$CODEX_HOME/skills/copy-editing/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/.claude-plugin/marketplace.json",
+      "bytes": 524,
+      "sha256": "24261fcfead5f536e0a6f0c3fd27fa809c69393217d67d617adb6c83a2715eb7",
+      "source": "$CODEX_HOME/skills/humanizer/.claude-plugin/marketplace.json",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/.claude-plugin/plugin.json",
+      "bytes": 520,
+      "sha256": "ce4f3dd0397c9ca71fe9a089dd00cd132436cfeba4513c53cc6c486f537de43c",
+      "source": "$CODEX_HOME/skills/humanizer/.claude-plugin/plugin.json",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/.github/workflows/validate.yml",
+      "bytes": 815,
+      "sha256": "f2d6a8780fb0b3cf6fa7d2ffccd72d0fc8bee29b4e63ea0fd65924712c9055fd",
+      "source": "$CODEX_HOME/skills/humanizer/.github/workflows/validate.yml",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/AGENTS.md",
+      "bytes": 2905,
+      "sha256": "8f5069d68622bc956e2d492f26879d2a06508e2ef16d2e573ab13f7a92a0607a",
+      "source": "$CODEX_HOME/skills/humanizer/AGENTS.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/agents/openai.yaml",
+      "bytes": 201,
+      "sha256": "9d87ff83149a04f86a372948b8ee35fa249de20923867bbc2a49304290aad736",
+      "source": "$CODEX_HOME/skills/humanizer/agents/openai.yaml",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/LICENSE",
+      "bytes": 1066,
+      "sha256": "4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96",
+      "source": "$CODEX_HOME/skills/humanizer/LICENSE",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/README.md",
+      "bytes": 16147,
+      "sha256": "d546538831ce8423587208d4a86dbe2be1f1f63445505d284dc558e6de86dac0",
+      "source": "$CODEX_HOME/skills/humanizer/README.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/scripts/validate-package.py",
+      "bytes": 3057,
+      "sha256": "750e5f50561b8a5285bd1a20ed8b127af65b1b25d50e88c2ce5fe8522943c8fd",
+      "source": "$CODEX_HOME/skills/humanizer/scripts/validate-package.py",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "optional-skills/humanizer/SKILL.md",
+      "bytes": 28728,
+      "sha256": "e8269e236bed06ed0fe4824c274112e54950b0cb46b0bafe5e1576ef7c9f93d5",
+      "source": "$CODEX_HOME/skills/humanizer/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "package.json",
+      "bytes": 336,
+      "sha256": "b456df5632d6d76b21b039f41ce368b7ede60418e4780bdc5203c5d108b5e796",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "plugins.json",
+      "bytes": 2634,
+      "sha256": "343a8dd8dacf69695cd764642e5e948672cf839f84851937090df39536b3e624",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "profile/AGENTS.md",
+      "bytes": 7228,
+      "sha256": "8744edb99895145d4edbf704262b8a12a6f442d0a9d9364b6f9aab1311280aae",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "profile/AGENTS.original.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "$CODEX_HOME/AGENTS.md (empty original)",
+      "version": "1.0.0"
+    },
+    {
+      "path": "profile/config.safe.toml",
+      "bytes": 313,
+      "sha256": "16c099075133fc1e07aca386672ebe9394d0c99ca8a054abfd5a63a55e0702d4",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "profile/frontend.rules",
+      "bytes": 204,
+      "sha256": "20e1a74b2d9464c78ade23081ca43e4dae226f769f3b27460799e30d7735b403",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8848,
+      "sha256": "f87075b34c833ee0d22a9395370038ce942b1a7e19494bca50be1e2747d0d5f3",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "scripts/install.mjs",
+      "bytes": 7339,
+      "sha256": "34c8b8ac26c1eac200b9b0fea3b4fd69b27ddb94362780fde98f3e4978535c2f",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "scripts/make-manifest.mjs",
+      "bytes": 1572,
+      "sha256": "c26e002b19ea8ff9ef572ccd19aad4cd8d7a97732a503087bec212377027ae45",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "scripts/test-installer.mjs",
+      "bytes": 3045,
+      "sha256": "206ca68f4b38f763ce853f33c8802fef87f666a343a320cbc59dcfb7d3773711",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "bytes": 3101,
+      "sha256": "f0733547395d65646a43f84187626edf5420a49e78afb8460e764146da462b0b",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    },
+    {
+      "path": "skills/gsap-core/SKILL.md",
+      "bytes": 14792,
+      "sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+      "source": "$CODEX_HOME/skills/gsap-core/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-frameworks/SKILL.md",
+      "bytes": 10621,
+      "sha256": "842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6",
+      "source": "$CODEX_HOME/skills/gsap-frameworks/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-performance/SKILL.md",
+      "bytes": 4139,
+      "sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+      "source": "$CODEX_HOME/skills/gsap-performance/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-plugins/SKILL.md",
+      "bytes": 21579,
+      "sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+      "source": "$CODEX_HOME/skills/gsap-plugins/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-react/SKILL.md",
+      "bytes": 6565,
+      "sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+      "source": "$CODEX_HOME/skills/gsap-react/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-scrolltrigger/SKILL.md",
+      "bytes": 18390,
+      "sha256": "9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4",
+      "source": "$CODEX_HOME/skills/gsap-scrolltrigger/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-timeline/SKILL.md",
+      "bytes": 4394,
+      "sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+      "source": "$CODEX_HOME/skills/gsap-timeline/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "skills/gsap-utils/SKILL.md",
+      "bytes": 12093,
+      "sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+      "source": "$CODEX_HOME/skills/gsap-utils/SKILL.md",
+      "version": "not declared in source; identified by SHA-256"
+    },
+    {
+      "path": "templates/project-AGENTS.md",
+      "bytes": 1700,
+      "sha256": "ee59006a5cd9586f2fe0130983ebac6208b8b7318d6b245ce8d8a3a461213e20",
+      "source": "authored transfer artifact",
+      "version": "1.0.0"
+    }
+  ]
+}

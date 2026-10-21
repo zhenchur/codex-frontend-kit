@@ -1,0 +1,6 @@
+# Extracted from the source machine's config.toml on 2026-10-21.
+# Portable optional model profile; account availability must be checked separately.
+# Does not configure sandbox, approvals, credentials, MCP, plugins or local paths.
+model = "gpt-6-astra"
+model_reasoning_effort = "ultra"
+service_tier = "priority"

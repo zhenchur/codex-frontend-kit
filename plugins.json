@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-21",
+  "kind": "reconnection-manifest-not-an-installer",
+  "plugins": [
+    {
+      "id": "figma@openai-curated",
+      "name": "Figma",
+      "version": "16.0.0",
+      "required": true,
+      "skills": [
+        "figma-design-to-code",
+        "figma-implement-motion",
+        "figma-use",
+        "figma-use-motion",
+        "figma-code-workflows",
+        "figma-code-connect",
+        "figma-generate-design",
+        "figma-generate-library"
+      ],
+      "purpose": "Read exact Figma nodes, implement designs and motion, write back when requested.",
+      "restore": "Install the official Figma plugin in the destination app, connect the account and confirm access to the requested file. Do not install these skill names separately over the plugin.",
+      "enabledInSourceConfig": true
+    },
+    {
+      "id": "github@openai-curated",
+      "name": "GitHub",
+      "required": true,
+      "purpose": "Read and publish repositories, verify remote commits.",
+      "restore": "Install/connect GitHub in the destination app and authorize the required repositories.",
+      "enabledInSourceConfig": true,
+      "cachedVersions": [
+        "0.1.12-5f7cd798dc99"
+      ]
+    },
+    {
+      "id": "browser@openai-bundled",
+      "name": "Browser",
+      "required": true,
+      "purpose": "Inspect localhost and verify visual behavior.",
+      "restore": "Use the browser tooling provided by the destination app. Internal transports are not portable.",
+      "enabledInSourceConfig": true,
+      "cachedVersions": [
+        "26.1016.51333"
+      ]
+    },
+    {
+      "id": "computer-use@openai-bundled",
+      "name": "Computer Use",
+      "required": false,
+      "purpose": "Native UI interaction when an API does not cover the task.",
+      "restore": "Install/enable the official plugin if the destination OS and app support it.",
+      "enabledInSourceConfig": true,
+      "cachedVersions": [
+        "26.1016.51333"
+      ]
+    },
+    {
+      "id": "visualize@openai-bundled",
+      "name": "Visualize",
+      "required": false,
+      "purpose": "Inline interactive design and motion explanations.",
+      "restore": "Install/enable the official plugin if available.",
+      "enabledInSourceConfig": true,
+      "cachedVersions": [
+        "1.0.55"
+      ]
+    },
+    {
+      "id": "code-review@openai-bundled",
+      "name": "Code Review",
+      "required": false,
+      "purpose": "Project review.",
+      "restore": "Enable in the destination app if available.",
+      "enabledInSourceConfig": true,
+      "cachedVersions": [
+        "26.1016.51333"
+      ]
+    }
+  ]
+}
